@@ -142,29 +142,33 @@ function App() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-28 max-w-3xl mx-auto px-6 text-center relative">
-        <div className="bg-gray-900/20 backdrop-blur-3xl rounded-3xl p-12 shadow-lg animate-slideInUp delay-200 hover:animate-glow hover-liquid">
-          <h3 className="text-3xl font-bold mb-6 text-red-600">Contactez-nous</h3>
-          <p className="mb-6">
+     <section id="contact" className="py-28 max-w-3xl mx-auto px-6 text-center relative">
+        <div className="bg-gray-900/20 backdrop-blur-3xl rounded-3xl p-8 sm:p-12 shadow-lg animate-slideInUp delay-200 hover:animate-glow hover-liquid">
+          <h3 className="text-3xl sm:text-4xl font-bold mb-6 text-red-600">Contactez-nous</h3>
+          
+          <p className="mb-4 sm:mb-6 text-base sm:text-lg">
             Envoyez-nous un email à{" "}
             <a href="mailto:taigacapitall@gmail.com" className="text-red-600 hover:underline">
               taigacapitall@gmail.com
             </a>
           </p>
-          <p className="mb-6">
+          
+          <p className="mb-6 text-base sm:text-lg">
             Numéro de téléphone :{" "}
             <a href="tel:+243844006223" className="text-red-600 hover:underline">
               +243 (0) 844006223 / +243 (0) 816073703
             </a>
           </p>
+          
           <a
             href="mailto:taigacapitall@gmail.com"
-            className="bg-red-600 hover:bg-red-500 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-3xl shadow-lg hover:shadow-red-700/80 transition-all duration-300 hover:animate-glow hover:scale-105 hover-liquid"
+            className="bg-red-600 hover:bg-red-500 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-3xl shadow-lg hover:shadow-red-700/80 transition-all duration-300 hover:animate-glow hover:scale-105 hover-liquid w-full sm:w-auto text-center block sm:inline-block"
           >
             Envoyer un message
           </a>
         </div>
       </section>
+
 
       <footer className="bg-black/70 backdrop-blur-md py-6 text-center mt-10">
         &copy; {new Date().getFullYear()} Taiga Services. Tous droits réservés.
