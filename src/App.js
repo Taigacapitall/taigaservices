@@ -106,22 +106,24 @@ function App() {
       </header>
 
       {/* Hero Section */}
-      <section className="h-screen flex flex-col justify-center items-center text-center px-4 relative overflow-hidden">
-        <div className="relative z-10 bg-gray-900/20 backdrop-blur-3xl rounded-3xl p-16 max-w-3xl shadow-[0_20px_60px_rgba(178,34,34,0.5)] hover:shadow-[0_30px_90px_rgba(178,34,34,0.7)] transition-all duration-700">
-          <h2 className="text-4xl sm:text-5xl font-bold mb-4 animate-fadeIn animate-shine hover:scale-105">
+    <section className="h-screen flex flex-col justify-center items-center text-center px-4 sm:px-6 relative overflow-hidden">
+        <div className="relative z-10 bg-gray-900/20 backdrop-blur-3xl rounded-3xl p-8 sm:p-16 max-w-md sm:max-w-3xl shadow-[0_15px_50px_rgba(178,34,34,0.5)] hover:shadow-[0_25px_90px_rgba(178,34,34,0.7)] transition-all duration-700">
+          
+          <h2 className="text-3xl sm:text-5xl font-bold mb-4 animate-fadeIn animate-shine hover:scale-105">
             Bienvenue chez Taiga Services
           </h2>
-          <p className="text-lg sm:text-xl mb-6 animate-fadeIn delay-200">
+          
+          <p className="text-base sm:text-xl mb-6 animate-fadeIn delay-200">
             Des solutions fluides, interactives et modernes pour booster votre entreprise.
           </p>
-          <a
+            <a
             href="#services"
-            className="bg-red-600 hover:bg-red-500 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-3xl shadow-lg hover:shadow-red-700/80 transition-all duration-300 hover:animate-glow hover:scale-105 hover-liquid"
+            className="bg-red-600 hover:bg-red-500 text-white font-bold px-6 sm:px-8 py-3 sm:py-4 rounded-3xl shadow-lg hover:shadow-red-700/80 transition-all duration-300 hover:animate-glow hover:scale-105 hover-liquid w-full sm:w-auto text-center block sm:inline-block"
           >
             Découvrir nos services
           </a>
         </div>
-      </section>
+    </section>
 
       {/* Services Section */}
       <section id="services" className="py-28 max-w-7xl mx-auto px-6 grid sm:grid-cols-1 md:grid-cols-3 gap-10 relative">
