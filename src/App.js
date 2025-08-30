@@ -110,7 +110,7 @@ function App() {
         <div className="relative z-10 bg-gray-900/20 backdrop-blur-3xl rounded-3xl p-8 sm:p-16 max-w-md sm:max-w-3xl shadow-[0_15px_50px_rgba(178,34,34,0.5)] hover:shadow-[0_25px_90px_rgba(178,34,34,0.7)] transition-all duration-700">
           
           <h2 className="text-3xl sm:text-5xl font-bold mb-4 animate-fadeIn animate-shine hover:scale-105">
-            Bienvenue chez Taiga Services
+            Bienvenue chez Seirin Services
           </h2>
           
           <p className="text-base sm:text-xl mb-6 animate-fadeIn delay-200">
@@ -138,7 +138,7 @@ function App() {
         <div className="bg-gray-900/20 backdrop-blur-3xl rounded-3xl p-12 shadow-lg animate-slideInUp hover:animate-glow hover-liquid">
           <h3 className="text-3xl font-bold mb-6 text-red-600">À propos de nous</h3>
           <p>
-            Taiga Services offre des solutions fluides, modernes et interactives adaptées à vos besoins.
+            Seirin Services offre des solutions fluides, modernes et interactives adaptées à vos besoins.
           </p>
         </div>
       </section>
@@ -173,7 +173,7 @@ function App() {
 
 
       <footer className="bg-black/70 backdrop-blur-md py-6 text-center mt-10">
-        &copy; {new Date().getFullYear()} Taiga Services. Tous droits réservés.
+        &copy; {new Date().getFullYear()} Seirin Services. Tous droits réservés.
       </footer>
     </div>
   );
