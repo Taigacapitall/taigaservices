@@ -73,7 +73,7 @@ function App() {
       <header className="fixed top-0 w-full z-50 bg-black/40 backdrop-blur-md shadow-md">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-extrabold text-red-600 tracking-wide hover:animate-glow">
-            Taiga Services
+            Seirin Services
           </h1>
 
           {/* Desktop nav */}
