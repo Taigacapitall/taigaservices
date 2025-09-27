@@ -208,7 +208,7 @@ export default function LandingPage() {
             {/* Left - copy */}
             <div className="space-y-6">
               <p className="text-sm text-white/60 uppercase tracking-wider">Let's talk design</p>
-              <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Design qui performe. <br />Stratégie qui gagne.</h1>
+              <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">Un site professionnel, <br />une notoriété assurée.</h1>
               <p className="text-lg text-white/80 max-w-xl">
                 Nous concevons des expériences utilisateurs pour les écoles et PME de Lubumbashi — design premium, conversion optimisée et outils pratiques (inscriptions, calendrier scolaire, communication parentale).
               </p>
