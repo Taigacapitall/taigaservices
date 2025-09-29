@@ -67,7 +67,7 @@ function LeadForm({ onSuccess, endpoint = '/api/leads', compact = false }) {
       <div className="p-4 rounded-lg bg-white/6 backdrop-blur-md border border-white/5">
         <h4 className="font-semibold text-lg">Merci — votre demande est reçue</h4>
         <p className="mt-2 text-sm text-white/75">Nous vous contacterons sous 24h. Téléchargez notre guide :</p>
-        <a href="/assets/Seirin-LeadMagnet.pdf" download className="inline-block mt-4 bg-gradient-to-r from-blue-500 to-indigo-600 text-white px-4 py-2 rounded-full font-medium">
+  <a href="/assets/Seirin-LeadMagnet.pdf" download className="inline-block mt-4 bg-gradient-to-b from-black to-blue-600 text-white px-4 py-2 rounded-full font-medium">
           Télécharger le guide
         </a>
       </div>
@@ -115,7 +115,7 @@ function LeadForm({ onSuccess, endpoint = '/api/leads', compact = false }) {
 
       <div className="flex items-center gap-3">
         <button type="submit" disabled={loading}
-          className="inline-flex items-center gap-2 bg-gradient-to-r from-blue-500 to-indigo-600 hover:from-blue-600 hover:to-indigo-700 px-5 py-2 rounded-full text-white font-semibold shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-500/30">
+          className="inline-flex items-center gap-2 bg-gradient-to-b from-black to-blue-600 hover:from-blue-700 hover:to-blue-800 px-5 py-2 rounded-full text-white font-semibold shadow-lg focus:outline-none focus:ring-4 focus:ring-blue-500/30">
           {loading ? 'Envoi...' : 'Demander un audit gratuit'}
         </button>
         <button type="button" onClick={() => { setForm({ name: '', email: '', company: '', phone: '', message: '', budget: '' }); setError(''); }}
@@ -168,7 +168,7 @@ export default function LandingPage() {
             <a href="#services" className="hover:text-white transition">Services</a>
             <a href="#pricing" className="hover:text-white transition">Prix</a>
             <a href="#contact" className="hover:text-white transition">Contact</a>
-            <button onClick={openModal} className="ml-4 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 shadow-md text-white text-sm">
+            <button onClick={openModal} className="ml-4 px-4 py-2 rounded-full bg-gradient-to-b from-black to-blue-600 shadow-md text-white text-sm">
               Demander un audit
             </button>
           </nav>
@@ -194,7 +194,7 @@ export default function LandingPage() {
               <a href="#services" className="py-2 px-4 rounded hover:bg-white/10" onClick={() => setMobileMenuOpen(false)}>Services</a>
               <a href="#pricing" className="py-2 px-4 rounded hover:bg-white/10" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
               <a href="#contact" className="py-2 px-4 rounded hover:bg-white/10" onClick={() => setMobileMenuOpen(false)}>Contact</a>
-              <button onClick={() => { openModal(); setMobileMenuOpen(false); }} className="mt-4 px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white shadow-md">Demander un audit</button>
+              <button onClick={() => { openModal(); setMobileMenuOpen(false); }} className="mt-4 px-4 py-2 rounded-full bg-gradient-to-b from-black to-blue-600 text-white shadow-md">Demander un audit</button>
             </div>
           </div>
         )}
@@ -214,7 +214,7 @@ export default function LandingPage() {
               </p>
 
               <div className="flex flex-wrap gap-4 mt-4">
-                <button onClick={openModal} className="inline-flex items-center gap-3 bg-gradient-to-r from-blue-500 to-indigo-600 px-6 py-3 rounded-full text-white font-semibold shadow-2xl hover:scale-[1.02] transition">
+                <button onClick={openModal} className="inline-flex items-center gap-3 bg-gradient-to-b from-black to-blue-600 px-6 py-3 rounded-full text-white font-semibold shadow-2xl hover:scale-[1.02] transition">
                   Obtenir un audit gratuit
                 </button>
                 <a href="#pricing" className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-white/6 text-white/95 border border-white/6 hover:bg-white/8 transition">
@@ -223,12 +223,7 @@ export default function LandingPage() {
               </div>
 
               <div className="mt-6 flex gap-4">
-                {TESTIMONIALS.map((t, i) => (
-                  <div key={i} className="bg-white/4 backdrop-blur-md p-3 rounded-lg text-sm max-w-xs border border-white/6">
-                    <div className="italic text-white/90">“{t.text}”</div>
-                    <div className="mt-2 text-xs text-white/70">— {t.name}</div>
-                  </div>
-                ))}
+                {/* Témoignages supprimés */}
               </div>
             </div>
 
@@ -297,7 +292,7 @@ export default function LandingPage() {
                 <h4 className="font-semibold text-lg">{s.title}</h4>
                 <p className="mt-3 text-sm text-white/80">{s.desc}</p>
                 <div className="mt-4">
-                  <button onClick={openModal} className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-sm">En savoir plus</button>
+                  <button onClick={openModal} className="px-4 py-2 rounded-full bg-gradient-to-b from-black to-blue-600 text-white text-sm">En savoir plus</button>
                 </div>
               </div>
             ))}
@@ -324,7 +319,7 @@ export default function LandingPage() {
                   {p.bullets.map((b, i) => <li key={i} className="flex items-start gap-2"><span className="mt-1 text-blue-400">•</span>{b}</li>)}
                 </ul>
                 <div className="mt-6">
-                  <button onClick={openModal} className="w-full px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium">Demander un devis</button>
+                  <button onClick={openModal} className="w-full px-4 py-2 rounded-full bg-gradient-to-b from-black to-blue-600 text-white font-medium">Demander un devis</button>
                 </div>
               </article>
             ))}
@@ -346,7 +341,7 @@ export default function LandingPage() {
                   {p.bullets.map((b, i) => <li key={i} className="flex items-start gap-2"><span className="mt-1 text-blue-400">•</span>{b}</li>)}
                 </ul>
                 <div className="mt-6">
-                  <button onClick={openModal} className="w-full px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white font-medium">Choisir cette offre</button>
+                  <button onClick={openModal} className="w-full px-4 py-2 rounded-full bg-gradient-to-b from-black to-blue-600 text-white font-medium">Choisir cette offre</button>
                 </div>
               </article>
             ))}
@@ -372,7 +367,7 @@ export default function LandingPage() {
                   Contacter via WhatsApp
                 </a>
 
-                <button onClick={openModal} className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600 text-white">Demander un audit</button>
+                <button onClick={openModal} className="px-4 py-2 rounded-full bg-gradient-to-b from-black to-blue-600 text-white">Demander un audit</button>
               </div>
             </div>
 
